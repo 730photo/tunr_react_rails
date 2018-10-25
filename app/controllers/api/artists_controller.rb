@@ -1,7 +1,7 @@
 class Api::ArtistsController < ApplicationController
    
     def index
-    @artists = Artist.ArtistsController
+    @artists = Artist.all
     render json: @artists
    end
    
