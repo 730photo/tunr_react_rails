@@ -1,11 +1,18 @@
 {
-    "name": "tunrrails",
-    "engines": {
-      "node": "9.9.0"
-    },
-    "scripts": {
-      "build": "cd client && npm install && npm run build && cd ..",
-      "deploy": "cp -a client/build/. public/",
-      "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
-    }
+  "name": "tunrrails",
+  "engines": {
+    "node": "9.9.0"
+  },
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
+  },
+  "dependencies": {
+    "react-background-slider": "^1.1.0",
+    "react-background-slideshow": "^1.0.4",
+    "react-viewport-slider": "^1.0.0",
+    "semantic-ui-react": "^0.83.0",
+    "yarn": "^1.10.1"
   }
+}
